@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'COUNTER APP 2.0',
+      title: 'NAEEM ',
       theme: ThemeData(
         primaryColor: Colors.white,
         accentColor: Colors.white,
@@ -91,7 +91,7 @@ class _CounterPageState extends State<CounterPage> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(' Counter App 2.0'),
+          title: Text('PAKISTAN No 1 Counter App'),
           bottom: TabBar(
             tabs: counterTabs,
             onTap: _changeCounter,
