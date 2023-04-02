@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.xylophone">
+    package="com.example.xylophone_2022_fall">
    <application
-        android:label="xylophone"
+        android:label="xylophone_2022_fall"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
