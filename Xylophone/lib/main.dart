@@ -47,6 +47,8 @@ class MyXylophoneApp extends StatelessWidget {
             Create_Button(3,"","Orange",Colors.orange),
             Create_Button(4,"","Green",Colors.greenAccent),
             Create_Button(5,"","Purple",Colors.purple),
+            Create_Button(6,"","LightGreen",Colors.lightGreenAccent),
+            Create_Button(7,"","Yellow",Colors.limeAccent),
 
           ],),
       ),
