@@ -3,13 +3,13 @@
 <img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice1.PNG">
 # CustomDice Dice Roll
 # 2 Dice Roll
-<img src="">
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice2.PNG">
 # CustomDice Dice Roll
 # 3 Dice Roll
-<img src="">
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice3.PNG">
 # CustomDice Dice Roll
 # 4 Dice Roll
-<img src="">
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice4.PNG">
 # CustomDice Dice Roll
 # 5 Dice Roll
 <img src="">
