@@ -1,16 +1,39 @@
 # naeem_dice_app
+# 1 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice1.PNG">
 
-A new Flutter project.
+# CustomDice Dice Roll
+# 2 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice2.PNG">
 
-## Getting Started
+# CustomDice Dice Roll
+# 3 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice3.PNG">
 
-This project is a starting point for a Flutter application.
+# CustomDice Dice Roll
+# 4 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice4.PNG">
 
-A few resources to get you started if this is your first Flutter project:
+# CustomDice Dice Roll
+# 5 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice5.PNG">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# CustomDice Dice Roll
+# 6 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice6.PNG">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# CustomDice Dice Roll
+# 7 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice7.PNG">
+
+# CustomDice Dice Roll
+# 8 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice8.PNG">
+
+# CustomDice Dice Roll
+# 9 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice9.PNG">
+
+# CustomDice Dice Roll
+# 10 Dice Roll
+<img src="https://github.com/naeem92/MobileApplication/blob/main/naeem_dice_app/Screenshort/Dice10.PNG">
