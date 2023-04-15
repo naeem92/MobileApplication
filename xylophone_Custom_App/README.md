@@ -1,16 +1,22 @@
-# xylophone_app
+# Custom_XyloPhone_App
 
-A new Flutter project.
+# Select the number of Colors
+<img src="https://github.com/naeem92/MobileApplication/blob/main/xylophone_Custom_App/SS/Select%20the%20Custom%20Color.png">
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Select the number of Sounds
+<img src="https://github.com/naeem92/MobileApplication/blob/main/xylophone_Custom_App/SS/Xylophone_Custom_Sound.png">
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Select the number of Sounds
+<img src="https://github.com/naeem92/MobileApplication/blob/main/xylophone_Custom_App/SS/Xylophone_Custom_Sound.png">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Select the Custom Colors
+<img src="https://github.com/naeem92/MobileApplication/blob/main/xylophone_Custom_App/SS/Select%20the%20colors.png">
+
+# Select the Custom Sounds
+<img src="https://github.com/naeem92/MobileApplication/blob/main/xylophone_Custom_App/SS/Select%20the%20Sound.png">
+
+
+
+
