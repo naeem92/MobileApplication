@@ -14,17 +14,13 @@
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz3.jpeg">
 
-# Choice T/F Questions Result
-
-<img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz5.jpeg">
-
 # Choice T/F Questions Show Answers
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz6.jpeg">
 
-# Choice T/F Show Answers
+# Choice T/F Questions Result
 
-<img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz10.jpeg">
+<img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz5.jpeg">
 
 # Multiple Choice Questions
 
