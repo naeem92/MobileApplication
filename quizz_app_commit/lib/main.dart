@@ -110,3 +110,12 @@ class _QuizPageState extends State<QuizPage> {
     ),
     ),
     ),
+    class Question {
+    String ?  questionText;
+    bool ?  questionAnswer;
+
+    Question(String q, bool a) {
+    questionText = q;
+    questionAnswer = a;
+    }
+    }
