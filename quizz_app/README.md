@@ -22,6 +22,10 @@
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz6.jpeg">
 
+# Choice T/F Questions Show Answers
+
+<img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz10.jpeg">
+
 # Multiple Choice Questions
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz7.jpeg">
