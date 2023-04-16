@@ -22,7 +22,7 @@
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz6.jpeg">
 
-# Choice T/F Questions Show Answers
+# Choice T/F Show Answers
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/quizz_app/ss/Quiz10.jpeg">
 
