@@ -21,3 +21,7 @@
 # Select Ans
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Quiz%20Correct%20Ans.jpeg">
+
+# Correct Ans
+
+<img src= "https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Correct%20Ans.jpeg">
