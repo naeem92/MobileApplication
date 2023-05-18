@@ -13,3 +13,7 @@
 # Select Ending Number
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Select%20Ending%20Point.jpeg">
+
+# Genrate Table
+
+<img src="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Table%20Genrate.jpeg">
