@@ -17,3 +17,7 @@
 # Genrate Table
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Table%20Genrate.jpeg">
+
+# Select Ans
+
+<img src="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Quiz%20Correct%20Ans.jpeg">
