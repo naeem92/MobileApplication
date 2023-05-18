@@ -29,3 +29,7 @@
 # Next Question
 
 <img src="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Quiz%20Wrong%20Ans.jpeg">
+
+# Wrong Ans
+
+<img src="https://github.com/naeem92/MobileApplication/blob/main/table%20generator_app/SS/Quiz%20Wrong%20Ans.jpeg">
