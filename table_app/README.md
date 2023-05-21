@@ -18,9 +18,9 @@
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Ending%20Point%20Limit.jpeg">
 
-#
+# Table Genrate
 
-<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Table%20Limit.jpeg">
+<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/table%20generate.jpeg">
 
 #
 
