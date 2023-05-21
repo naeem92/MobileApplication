@@ -10,9 +10,9 @@
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Select%20Ending%20Limit.jpeg">
 
-#
+# Starting or Ending Limit
 
-<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Table%20Limit.jpeg">
+<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Starting%20or%20Ending%20Limit.jpeg">
 
 #
 
