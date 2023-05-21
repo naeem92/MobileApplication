@@ -38,9 +38,9 @@
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Select%20Option%20Req.jpeg">
 
-#
+# Wrong Ans
 
-<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Table%20Limit.jpeg">
+<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Wrong%20Ans.jpeg">
 
 #
 
