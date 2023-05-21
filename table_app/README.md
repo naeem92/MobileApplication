@@ -30,9 +30,9 @@
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Select%20Circle%20Avatar.jpeg">
 
-#
+# Correct Ans Show
 
-<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Table%20Limit.jpeg">
+<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Correct%20Ans.jpeg">
 
 #
 
