@@ -42,9 +42,9 @@
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Wrong%20Ans.jpeg">
 
-#
+# Result Show
 
-<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Table%20Limit.jpeg">
+<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Result.jpeg">
 
 #
 
