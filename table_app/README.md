@@ -22,9 +22,9 @@
 
 <img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/table%20generate.jpeg">
 
-#
+# Genrate Quiz
 
-<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Table%20Limit.jpeg">
+<img src ="https://github.com/naeem92/MobileApplication/blob/main/table_app/ss/Remaning%20Questions%20Show.jpeg">
 
 #
 
