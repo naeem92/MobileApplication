@@ -1,17 +1,50 @@
 import 'package:flutter/material.dart';
 import 'slider.dart';
 import 'game.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
-class Result extends StatelessWidget {
+class Result extends StatefulWidget {
   final Game game;
 
   Result({required this.game});
+
+  @override
+  _ResultState createState() => _ResultState();
+}
+
+class _ResultState extends State<Result> {
+  late Game game;
+  late AssetsAudioPlayer _audioPlayer;
+  bool _isSoundMuted = false;
+
+  @override
+  void initState() {
+    super.initState();
+    game = widget.game;
+    _audioPlayer = AssetsAudioPlayer();
+  }
+
+  @override
+  void dispose() {
+    _audioPlayer.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Result"),
+        actions: [
+          IconButton(
+            icon: Icon(_isSoundMuted ? Icons.volume_off : Icons.volume_up),
+            onPressed: () {
+              setState(() {
+                _isSoundMuted = !_isSoundMuted;
+              });
+            },
+          ),
+        ],
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -55,6 +88,8 @@ class Result extends StatelessWidget {
 
   Widget _getResult() {
     if (game.isWordGuessed()) {
+      _playSound(true); // Play sound when the game is won
+
       return Column(
         children: <Widget>[
           Image.asset(
@@ -71,6 +106,8 @@ class Result extends StatelessWidget {
         ],
       );
     } else {
+      _playSound(false); // Play sound when the game is lost
+
       return Column(
         children: <Widget>[
           Image.asset(
@@ -112,5 +149,22 @@ class Result extends StatelessWidget {
         height: 50,
       );
     }
+  }
+
+  void _playSound(bool isGameWon) {
+    if (_isSoundMuted) return;
+
+    String soundFileName;
+    if (isGameWon) {
+      soundFileName = "congratulations.mp3";
+    } else {
+      soundFileName = "loss.mp3";
+    }
+
+    String soundFilePath = "images/$soundFileName";
+    _audioPlayer.open(
+      Audio(soundFilePath),
+    );
+    _audioPlayer.play();
   }
 }

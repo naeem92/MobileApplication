@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'result.dart';
 import 'game.dart';
+import 'package:flutter/services.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
 class Play extends StatefulWidget {
   final Game game;
@@ -13,15 +15,21 @@ class Play extends StatefulWidget {
 
 class _PlayState extends State<Play> {
   late Game game;
+  late AssetsAudioPlayer _audioPlayer;
+  bool _isSoundMuted = false;
 
   @override
   void initState() {
     super.initState();
     game = widget.game;
+    _audioPlayer = AssetsAudioPlayer();
   }
 
-  // Generate a word based on the length provided
-
+  @override
+  void dispose() {
+    _audioPlayer.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +37,14 @@ class _PlayState extends State<Play> {
       appBar: AppBar(
         title: Text("Play"),
         actions: [
+          IconButton(
+            icon: Icon(_isSoundMuted ? Icons.volume_off : Icons.volume_up),
+            onPressed: () {
+              setState(() {
+                _isSoundMuted = !_isSoundMuted;
+              });
+            },
+          ),
           if (game.wrongLettersGuessed.length >= 5)
             _buildGuessWordWidget(context),
         ],
@@ -139,6 +155,9 @@ class _PlayState extends State<Play> {
               ),
             ),
             onTap: () {
+              if (!_isSoundMuted) {
+                _playSound();
+              }
               if (game.displayWordList.contains(letter) ||
                   game.wrongLettersGuessed.contains(letter)) {
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -149,7 +168,6 @@ class _PlayState extends State<Play> {
                   duration: Duration(seconds: 1),
                 ));
               } else {
-                // Play the sound
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text(
                     letter,
@@ -194,7 +212,6 @@ class _PlayState extends State<Play> {
   }
 
   void _showGuessWordDialog(BuildContext context) {
-    // Show the dialog to allow the user to guess the word
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -204,7 +221,6 @@ class _PlayState extends State<Play> {
           actions: [
             ElevatedButton(
               onPressed: () {
-                // Perform actions on submitting the guess
                 Navigator.of(context).pop();
               },
               child: Text("Done"),
@@ -213,5 +229,12 @@ class _PlayState extends State<Play> {
         );
       },
     );
+  }
+
+  void _playSound() {
+    _audioPlayer.open(
+      Audio("images/Drop.mp3"),
+    );
+    _audioPlayer.play();
   }
 }

@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'play.dart';
 import 'game.dart';
+import 'package:flutter/services.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
 class SliderScreen extends StatefulWidget {
   @override
@@ -11,6 +13,8 @@ class SliderScreen extends StatefulWidget {
 
 class _SliderScreenState extends State<SliderScreen> {
   int _wordLength = 3;
+  late AssetsAudioPlayer _audioPlayer;
+  bool _isSoundMuted = false;
 
   void _navigateToPlayScreen() {
     Game game = Game(wordLength: _wordLength); // Increase word length by 1 for generating words
@@ -20,11 +24,42 @@ class _SliderScreenState extends State<SliderScreen> {
     );
   }
 
+  void _playSound() {
+    if (!_isSoundMuted) {
+      _audioPlayer.open(
+        Audio("images/start.mp3"),
+      );
+      _audioPlayer.play();
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _audioPlayer = AssetsAudioPlayer();
+  }
+
+  @override
+  void dispose() {
+    _audioPlayer.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Slider"),
+        actions: [
+          IconButton(
+            icon: _isSoundMuted ? Icon(Icons.volume_off) : Icon(Icons.volume_up),
+            onPressed: () {
+              setState(() {
+                _isSoundMuted = !_isSoundMuted;
+              });
+            },
+          ),
+        ],
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -67,7 +102,10 @@ class _SliderScreenState extends State<SliderScreen> {
                     'images/PlayB.png',
                     width: 200,
                   ),
-                  onTap: _navigateToPlayScreen,
+                  onTap: () {
+                    _playSound();
+                    _navigateToPlayScreen();
+                  },
                 ),
               ),
             ],

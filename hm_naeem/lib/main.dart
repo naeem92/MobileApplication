@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:hm_naeem/slider.dart';
 import 'play.dart';
 
@@ -53,6 +55,9 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     'images/hangman6.png',
   ];
 
+  late AssetsAudioPlayer _audioPlayer;
+  bool _isSoundMuted = false;
+
   @override
   void initState() {
     super.initState();
@@ -61,11 +66,14 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       duration: Duration(milliseconds: 700),
     );
     _startAnimation();
+
+    _audioPlayer = AssetsAudioPlayer();
   }
 
   @override
   void dispose() {
     _animationController.dispose();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
@@ -81,11 +89,33 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     });
   }
 
+  void _playSound() {
+    if (!_isSoundMuted) {
+      _audioPlayer.open(
+        Audio("images/SplachSound.mp3"),
+      );
+      _audioPlayer.play();
+    }
+  }
+
+  void _toggleSound() {
+    setState(() {
+      _isSoundMuted = !_isSoundMuted;
+      _audioPlayer.setVolume(_isSoundMuted ? 0 : 1);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Hangman"),
+        actions: [
+          IconButton(
+            icon: _isSoundMuted ? Icon(Icons.volume_off) : Icon(Icons.volume_up),
+            onPressed: _toggleSound,
+          ),
+        ],
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -126,6 +156,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                         width: 150,
                       ),
                       onTap: () {
+                        _playSound();
                         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                           return SliderScreen();
                         }));
